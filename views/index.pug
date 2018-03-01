@@ -1,0 +1,32 @@
+doctype html
+| PASTE YOUR HTML CODE HERE
+head
+  title Calculator
+div
+  p Distance
+  form
+    | client: 
+    input(type='text' name='add1')
+    | &#x9;&#x9;address1: 
+    input(type='text' name='add1')
+    | &#x9;&#x9;address2: 
+    input(type='text' name='add2')
+    | &#x9;&#x9;Distance: 
+    input(type='text' name='')
+    input(type='submit' name='Calculate')
+  ul
+    li
+      a(href='#car') med bill
+    li
+      a(href='#public') Kollektivtrafik
+    li
+      a(href='#foot') till fots
+    li
+      a(href='#cycle') cykel
+script.
+  var add1 = document.getElementsByName('add1')
+  var add2 = document.getElementsByName('add2')
+  if(add1.length===0 && add2.length===0){
+  document.getElementsByName("add1").disabled = true;
+  document.getElementsByName("add2").disabled = true;
+  }
